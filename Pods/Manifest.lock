@@ -1,0 +1,16 @@
+PODS:
+  - HTestVC (1.2.4)
+
+DEPENDENCIES:
+  - HTestVC
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HTestVC
+
+SPEC CHECKSUMS:
+  HTestVC: de5dda504435f0d6a448945f3e5ef3b944f0237c
+
+PODFILE CHECKSUM: 50591339d4c8724fb37ad525a63ae0f494310a63
+
+COCOAPODS: 1.5.3
