@@ -16,4 +16,6 @@
 
 +(instancetype)factoryMethodB;
 
++ (NSString *)firstName;
+
 @end

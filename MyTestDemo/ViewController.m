@@ -11,6 +11,7 @@
 #import "InstanceTypeVC.h"
 #import "VarableStructVC.h"
 #import "AutoreleaseVC.h"
+#import "GCDDemoVC.h"
 
 @interface ViewController ()
 
@@ -42,6 +43,11 @@
         @strongify(self)
         [self autoreleaseDemo];
     }];
+    
+    [self addMenu:@"GCD测试" callback:^(id sender, id data) {
+        @strongify(self)
+        [self gcdDemo];
+    }];
 }
 
 
@@ -71,6 +77,12 @@
 - (void)autoreleaseDemo
 {
     AutoreleaseVC *vc = [AutoreleaseVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)gcdDemo
+{
+    GCDDemoVC *vc = [GCDDemoVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

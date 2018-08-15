@@ -7,6 +7,7 @@
 //
 
 #import "Person.h"
+#import "Test.h"
 
 @implementation Person
 
@@ -18,6 +19,12 @@
 +(instancetype)factoryMethodB
 {
     return [[self alloc] init];
+}
+
++ (NSString *)firstName
+{
+    NSString *name = [[self factoryMethodB] name];
+    return name;
 }
 
 @end

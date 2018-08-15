@@ -13,6 +13,7 @@
 		BE2208552119711600DEB448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2208542119711600DEB448 /* Assets.xcassets */; };
 		BE2208582119711600DEB448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2208562119711600DEB448 /* LaunchScreen.storyboard */; };
 		BE22085B2119711600DEB448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE22085A2119711600DEB448 /* main.m */; };
+		BE264F2A211C35F30073B7F6 /* GCDDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE264F29211C35F30073B7F6 /* GCDDemoVC.m */; };
 		BE3083062119741E0080DF01 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3083052119741E0080DF01 /* RunLoopViewController.m */; };
 		BE30830B2119760E0080DF01 /* InstanceTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE30830A2119760E0080DF01 /* InstanceTypeVC.m */; };
 		BE30830E211976250080DF01 /* VarableStructVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE30830D211976250080DF01 /* VarableStructVC.m */; };
@@ -35,6 +36,8 @@
 		BE2208572119711600DEB448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE2208592119711600DEB448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE22085A2119711600DEB448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE264F28211C35F30073B7F6 /* GCDDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoVC.h; sourceTree = "<group>"; };
+		BE264F29211C35F30073B7F6 /* GCDDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoVC.m; sourceTree = "<group>"; };
 		BE3083042119741E0080DF01 /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		BE3083052119741E0080DF01 /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
 		BE308307211974780080DF01 /* MyDemoHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDemoHeader.h; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 		BE22084A2119711500DEB448 /* MyTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BE264F27211C35AE0073B7F6 /* GCD */,
 				BE308332211AD4960080DF01 /* Autorelease */,
 				BE308301211974030080DF01 /* InstanceType */,
 				BE308302211974030080DF01 /* RunLoop */,
@@ -124,6 +128,15 @@
 				BE308308211975100080DF01 /* MyTestDemo-Prefix.pch */,
 			);
 			path = MyTestDemo;
+			sourceTree = "<group>";
+		};
+		BE264F27211C35AE0073B7F6 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				BE264F28211C35F30073B7F6 /* GCDDemoVC.h */,
+				BE264F29211C35F30073B7F6 /* GCDDemoVC.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		BE308301211974030080DF01 /* InstanceType */ = {
@@ -269,6 +282,7 @@
 				BE22085B2119711600DEB448 /* main.m in Sources */,
 				BE30832B211A89870080DF01 /* Test.m in Sources */,
 				BE308335211AD4960080DF01 /* AutoreleaseVC.m in Sources */,
+				BE264F2A211C35F30073B7F6 /* GCDDemoVC.m in Sources */,
 				BE308327211A816C0080DF01 /* RunLoopChangeModeVC.m in Sources */,
 				BE3083112119789A0080DF01 /* MyThread.m in Sources */,
 				BE22084D2119711500DEB448 /* AppDelegate.m in Sources */,
