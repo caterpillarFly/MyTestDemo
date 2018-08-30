@@ -13,6 +13,8 @@
 #import "AutoreleaseVC.h"
 #import "GCDDemoVC.h"
 
+#include "file1.h"
+
 @interface ViewController ()
 
 @end
@@ -47,6 +49,11 @@
     [self addMenu:@"GCD测试" callback:^(id sender, id data) {
         @strongify(self)
         [self gcdDemo];
+    }];
+    
+    [self addMenu:@"Static函数" callback:^(id sender, id data) {
+        @strongify(self)
+        [self staticFunction];
     }];
 }
 
@@ -86,5 +93,9 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)staticFunction
+{
+    printStr1();
+}
 
 @end

@@ -7,49 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C0B4E5D0DA5C37E5655E6C26D4D4841 /* HTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E395E64903C87E16E0EF587229B82961 /* HTestVC.m */; };
-		460E0258C86CF549A41D38EB3D4EBA05 /* Pods-MyTestDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5409AC732B981D9D40D21B9F526EDD /* Pods-MyTestDemo-dummy.m */; };
-		D45FFB5E4CE0174568B7F35270F3DCDA /* HTestVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 735BC99E878CE740CF5A1E9C99F37AA8 /* HTestVC.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E2E7FA71AFDD45651932681C789EE802 /* HTestVC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE5D8B0A9BD4E161CE4208E89ADAD34 /* HTestVC-dummy.m */; };
+		0531CBFFF7A5AF40E5DEE24F782792F3 /* ZSChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EFA8425B4C3F498EA9378A85DC3FC3 /* ZSChannelManager.m */; };
+		0C4FA7D53D3FD41EDD2EDEAE5315458A /* ZSDataInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6856129607465FF73592DE2B1560149E /* ZSDataInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E67855148250A5BC469D1847E938175 /* ZSDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B297392985881067771FCBCDF8E14C68 /* ZSDataInfo.m */; };
+		11E71886CA638E52DAC8F2A5AD77CFE2 /* ZSChannelQQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 51EAF06C1AFC7188E37137039D4D4E7F /* ZSChannelQQ.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C0B4E5D0DA5C37E5655E6C26D4D4841 /* HTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDAE0D8A96274E93F4B9EE89724EFF /* HTestVC.m */; };
+		2E445A6C98F4AB285FB5AFF1C44415B7 /* ZSChannelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DD504F20E9BCA3D76959B9FECE8608 /* ZSChannelManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		348EB983CCDB63DADF3DB43F5B8C5E74 /* ZSChannelSinaWB.m in Sources */ = {isa = PBXBuildFile; fileRef = 159BB15E2BD8BA2C1830F8EFF88BB461 /* ZSChannelSinaWB.m */; };
+		50A0784B6C2CB735EB1602E99404595B /* ZSChannelWX.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0EAF08EADF0C452714A6DB8B5DEBCA /* ZSChannelWX.m */; };
+		58593066371C82E2BBE465D62D92BD78 /* ZShareInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA2EDBE8129856A1D4422376857F54F /* ZShareInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B028F8CFBF61AEA938A4B9BE8917848 /* Pods-MyTestDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5409AC732B981D9D40D21B9F526EDD /* Pods-MyTestDemo-dummy.m */; };
+		5C359716B493C778DDBCE90D1DAFF8CA /* ZSThirdKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB552257B736335ACE461DC333203C /* ZSThirdKit-dummy.m */; };
+		6E600C2D1AA5136B3597D621602BF70D /* ZSChannelPYQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F859CDCCED3085C3D665F95ED157164 /* ZSChannelPYQ.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71F36A3AB0549E76DECD2D15A3F31DD8 /* ZSChannelBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D685FD9073549C6E67CD00310DB4324 /* ZSChannelBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79B18628DFC271528232A5B187C738FE /* ZSChannelWX.h in Headers */ = {isa = PBXBuildFile; fileRef = 023ECD2792BC95C9E170E94510BD8488 /* ZSChannelWX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D427005ECA1A28EDEC52F7C5D46E7A4 /* ZSChannelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC85A77CD3A728934C6B35EFC08C360 /* ZSChannelBase.m */; };
+		8D69019C75158FC015D16AED3FFFB85F /* ZSChannelQQZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C0A0D86DAC22234695B33C16D0703 /* ZSChannelQQZone.m */; };
+		8E215699AD5A72748197E2412EA60D7A /* ZSChannelHeaderFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 44BA0C803932888FC9B8A65B03727E7B /* ZSChannelHeaderFile.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E659578D92C204B9AB541BC6B94B873 /* ZShareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01DFB36B12DA984B0BB6332C517FEA /* ZShareInfo.m */; };
+		BCF2B4714A3A445B8B0D8D24998962D9 /* ZSChannelQQ.m in Sources */ = {isa = PBXBuildFile; fileRef = BD734AC79783C6800EC3FED1F6FCCC29 /* ZSChannelQQ.m */; };
+		CA370E8219AAFF536A5B59181A81BFFC /* ZSChannelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 34842B601F6D50C73E0F05DB9FBD87EF /* ZSChannelProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCFDDAC0C1EF34167CE9E6690C92AC67 /* ZSChannelPYQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D31E35ECD567CBFD131911B69A4FB64 /* ZSChannelPYQ.m */; };
+		D45FFB5E4CE0174568B7F35270F3DCDA /* HTestVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAA8D8A9C4EB315F818EC77D611EE0B /* HTestVC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2E7FA71AFDD45651932681C789EE802 /* HTestVC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4A6BFC0A2C891B4E92EC1DB4557E4 /* HTestVC-dummy.m */; };
+		E40DE4A7BC31ABC05DBE575B0C8BC383 /* ZSChannelQQZone.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2812AECE6E4F061F7B6B02FD47AF10 /* ZSChannelQQZone.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ECC1CD5CDED78DE5CD001FD8977245D1 /* ZSChannelSinaWB.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D4583B6CEAC6AA3F16804ED1008F66 /* ZSChannelSinaWB.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3099EF9B4AA093EC4696E3021ED5E427 /* PBXContainerItemProxy */ = {
+		0A2EEAF442BE1D4B54D280D1FA64A7B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B1457CF3F3929A435AC1373925649985;
 			remoteInfo = HTestVC;
 		};
+		ECEB93F5D08A24C869B647301D949D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 867C5D0B6650AE3D952579AADB0AD318;
+			remoteInfo = ZSThirdKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023ECD2792BC95C9E170E94510BD8488 /* ZSChannelWX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelWX.h; path = Classes/Channels/WeChatChannel/ZSChannelWX.h; sourceTree = "<group>"; };
+		0D31E35ECD567CBFD131911B69A4FB64 /* ZSChannelPYQ.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSChannelPYQ.m; path = Classes/Channels/WeChatChannel/ZSChannelPYQ.m; sourceTree = "<group>"; };
+		0FFAE6FE49CDCB9D14B1D04DBA307DF3 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = sdk/QQ/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		159BB15E2BD8BA2C1830F8EFF88BB461 /* ZSChannelSinaWB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSChannelSinaWB.m; path = Classes/Channels/SinaChannel/ZSChannelSinaWB.m; sourceTree = "<group>"; };
+		1C4C0A0D86DAC22234695B33C16D0703 /* ZSChannelQQZone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSChannelQQZone.m; path = Classes/Channels/QQChannel/ZSChannelQQZone.m; sourceTree = "<group>"; };
+		225F30C17D8ABDE9A1B9A24AFAB4142E /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.7.9/WXApi.h; sourceTree = "<group>"; };
+		25668EC9ED8A07F61573ABE46EB4C351 /* libZSThirdKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZSThirdKit.a; path = libZSThirdKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		265A60FA9C754CB64A2018A33D9B705D /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboShare.h"; path = "libWeiboSDK/WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
 		2948F539CBAAFB7825EB1C165F146BF8 /* Pods-MyTestDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyTestDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		30EFA8425B4C3F498EA9378A85DC3FC3 /* ZSChannelManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSChannelManager.m; path = Classes/Manager/ZSChannelManager.m; sourceTree = "<group>"; };
+		34842B601F6D50C73E0F05DB9FBD87EF /* ZSChannelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelProtocol.h; path = Classes/Headers/ZSChannelProtocol.h; sourceTree = "<group>"; };
 		356B336CF8106567F8C52A8E82E8737E /* Pods-MyTestDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyTestDemo-frameworks.sh"; sourceTree = "<group>"; };
+		36FF533528D83502408B0B6499847127 /* HTestVC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTestVC-prefix.pch"; sourceTree = "<group>"; };
+		3E2812AECE6E4F061F7B6B02FD47AF10 /* ZSChannelQQZone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelQQZone.h; path = Classes/Channels/QQChannel/ZSChannelQQZone.h; sourceTree = "<group>"; };
+		3FB4A6BFC0A2C891B4E92EC1DB4557E4 /* HTestVC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTestVC-dummy.m"; sourceTree = "<group>"; };
+		432E968322C3068095F9F19B3AB66DD5 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = OpenSDK1.7.9/libWeChatSDK.a; sourceTree = "<group>"; };
+		44BA0C803932888FC9B8A65B03727E7B /* ZSChannelHeaderFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelHeaderFile.h; path = Classes/Headers/ZSChannelHeaderFile.h; sourceTree = "<group>"; };
+		47C8C0A9A4B97FE5665A21BB6B81F4C6 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = libWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
+		48D4583B6CEAC6AA3F16804ED1008F66 /* ZSChannelSinaWB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelSinaWB.h; path = Classes/Channels/SinaChannel/ZSChannelSinaWB.h; sourceTree = "<group>"; };
+		4A5ECDC98E4529248D82ADB9AA3C43D5 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.7.9/WechatAuthSDK.h; sourceTree = "<group>"; };
+		4D685FD9073549C6E67CD00310DB4324 /* ZSChannelBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelBase.h; path = Classes/Channels/ZSChannelBase.h; sourceTree = "<group>"; };
+		51EAF06C1AFC7188E37137039D4D4E7F /* ZSChannelQQ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelQQ.h; path = Classes/Channels/QQChannel/ZSChannelQQ.h; sourceTree = "<group>"; };
 		5F62632CC6BFBEDE3E72AEA09EBC5A05 /* Pods-MyTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		735BC99E878CE740CF5A1E9C99F37AA8 /* HTestVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTestVC.h; path = Class/HTestVC.h; sourceTree = "<group>"; };
-		7C24A25EB09CCAAB21B9D675F38934C0 /* libPods-MyTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MyTestDemo.a"; path = "libPods-MyTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FF25F26E89D044AA0675743B31276A5 /* HTestVC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTestVC.xcconfig; sourceTree = "<group>"; };
+		6856129607465FF73592DE2B1560149E /* ZSDataInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSDataInfo.h; path = Classes/DataInfo/ZSDataInfo.h; sourceTree = "<group>"; };
+		6D3EF40C4D2EEFC446461238B760AD66 /* ZSThirdKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSThirdKit-prefix.pch"; sourceTree = "<group>"; };
+		6F859CDCCED3085C3D665F95ED157164 /* ZSChannelPYQ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelPYQ.h; path = Classes/Channels/WeChatChannel/ZSChannelPYQ.h; sourceTree = "<group>"; };
+		77DD504F20E9BCA3D76959B9FECE8608 /* ZSChannelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZSChannelManager.h; path = Classes/Manager/ZSChannelManager.h; sourceTree = "<group>"; };
+		794F2FFAF79D2FF38C4AB29799B975E0 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKRelationshipButton.h; path = libWeiboSDK/WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		7EC85A77CD3A728934C6B35EFC08C360 /* ZSChannelBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSChannelBase.m; path = Classes/Channels/ZSChannelBase.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94F44D31110FBC92ED7D01897102E01A /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboGame.h"; path = "libWeiboSDK/WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
 		9C5409AC732B981D9D40D21B9F526EDD /* Pods-MyTestDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyTestDemo-dummy.m"; sourceTree = "<group>"; };
-		A0F3DBC4FA35085A182C9D91944702EB /* HTestVC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTestVC-prefix.pch"; sourceTree = "<group>"; };
-		ACE5D8B0A9BD4E161CE4208E89ADAD34 /* HTestVC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTestVC-dummy.m"; sourceTree = "<group>"; };
-		C1ACFB54CA6B887039C80EE35EF487C8 /* libHTestVC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHTestVC.a; path = libHTestVC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D47DC37BAA04D9F3BC6C5DF61E2B5A0 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.7.9/WXApiObject.h; sourceTree = "<group>"; };
+		9EAA8D8A9C4EB315F818EC77D611EE0B /* HTestVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTestVC.h; path = Class/HTestVC.h; sourceTree = "<group>"; };
+		A813D82BCF372472159FD8248C756980 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKCommentButton.h; path = libWeiboSDK/WBSDKCommentButton.h; sourceTree = "<group>"; };
+		AD00A83AA903A6673808A15F294AE945 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKBasicButton.h; path = libWeiboSDK/WBSDKBasicButton.h; sourceTree = "<group>"; };
+		AF624E038E1216DBD9BAB190530EAB4A /* WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboUser.h; path = libWeiboSDK/WeiboUser.h; sourceTree = "<group>"; };
+		B09136F21D14AE0C58768D9C85AE7143 /* ZSThirdKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSThirdKit.xcconfig; sourceTree = "<group>"; };
+		B25BEAE61CB87096572B21D6D6837FFB /* HTestVC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTestVC.xcconfig; sourceTree = "<group>"; };
+		B297392985881067771FCBCDF8E14C68 /* ZSDataInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSDataInfo.m; path = Classes/DataInfo/ZSDataInfo.m; sourceTree = "<group>"; };
+		B8FA8CA86C35EE0D2344DD58E4DFE0AE /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboToken.h"; path = "libWeiboSDK/WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		BADDAE0D8A96274E93F4B9EE89724EFF /* HTestVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTestVC.m; path = Class/HTestVC.m; sourceTree = "<group>"; };
+		BD734AC79783C6800EC3FED1F6FCCC29 /* ZSChannelQQ.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSChannelQQ.m; path = Classes/Channels/QQChannel/ZSChannelQQ.m; sourceTree = "<group>"; };
+		BFE65F4C63CE6E47E29BF5A54236FDD3 /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		CAACD309AE15E871ED738666D5035225 /* libHTestVC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHTestVC.a; path = libHTestVC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0EAF08EADF0C452714A6DB8B5DEBCA /* ZSChannelWX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZSChannelWX.m; path = Classes/Channels/WeChatChannel/ZSChannelWX.m; sourceTree = "<group>"; };
+		CF9B99AEEEF5AFF53A5738A8C701A796 /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = libWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
 		DF6548596890EEDA4C0706E6AF97D653 /* Pods-MyTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyTestDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E395E64903C87E16E0EF587229B82961 /* HTestVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTestVC.m; path = Class/HTestVC.m; sourceTree = "<group>"; };
+		EF01DFB36B12DA984B0BB6332C517FEA /* ZShareInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZShareInfo.m; path = Classes/DataInfo/ZShareInfo.m; sourceTree = "<group>"; };
+		F1FB552257B736335ACE461DC333203C /* ZSThirdKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZSThirdKit-dummy.m"; sourceTree = "<group>"; };
+		F2D03FACDFA2D1929E574501FAA2DB6F /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "libWeiboSDK/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
 		F33EAA239986FAA52596573B8D448486 /* Pods-MyTestDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyTestDemo-resources.sh"; sourceTree = "<group>"; };
 		F96E75326A706D31770E3EFEFEEAC8AB /* Pods-MyTestDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyTestDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FAAC114386FF83AFB6FDACE72517742F /* libPods-MyTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MyTestDemo.a"; path = "libPods-MyTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBB0E67F331F6BF973736711D2E6132 /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = libWeiboSDK/WeiboSDK.h; sourceTree = "<group>"; };
+		FEA2EDBE8129856A1D4422376857F54F /* ZShareInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZShareInfo.h; path = Classes/DataInfo/ZShareInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3879DB84F36A18F2C1DCB2683CC8F7C2 /* Frameworks */ = {
+		95A99A36C3AC08A0B8760BB3793E3059 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95A99A36C3AC08A0B8760BB3793E3059 /* Frameworks */ = {
+		A32D2B093229F082E0E44FA5982D43C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB7FF0C899009189EDBF116DA8FABF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A99340CD070711C17E87A795FCC9CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFE65F4C63CE6E47E29BF5A54236FDD3 /* libWeiboSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +150,99 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		36D005277985633FBCF9F6E4C2EDA382 /* HTestVC */ = {
+		1294AB7F723F941E80831BA466C82F7B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				735BC99E878CE740CF5A1E9C99F37AA8 /* HTestVC.h */,
-				E395E64903C87E16E0EF587229B82961 /* HTestVC.m */,
-				E37366B16818DB5D8491D56CC5925B50 /* Support Files */,
+				CAACD309AE15E871ED738666D5035225 /* libHTestVC.a */,
+				FAAC114386FF83AFB6FDACE72517742F /* libPods-MyTestDemo.a */,
+				25668EC9ED8A07F61573ABE46EB4C351 /* libZSThirdKit.a */,
 			);
-			name = HTestVC;
-			path = HTestVC;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		161711B92873AB7B35A2AD19640B1B06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				432E968322C3068095F9F19B3AB66DD5 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2814DF71EFA0DB61627C9487BCFE1A85 /* ZSThirdKit */ = {
+			isa = PBXGroup;
+			children = (
+				4D685FD9073549C6E67CD00310DB4324 /* ZSChannelBase.h */,
+				7EC85A77CD3A728934C6B35EFC08C360 /* ZSChannelBase.m */,
+				44BA0C803932888FC9B8A65B03727E7B /* ZSChannelHeaderFile.h */,
+				77DD504F20E9BCA3D76959B9FECE8608 /* ZSChannelManager.h */,
+				30EFA8425B4C3F498EA9378A85DC3FC3 /* ZSChannelManager.m */,
+				34842B601F6D50C73E0F05DB9FBD87EF /* ZSChannelProtocol.h */,
+				6F859CDCCED3085C3D665F95ED157164 /* ZSChannelPYQ.h */,
+				0D31E35ECD567CBFD131911B69A4FB64 /* ZSChannelPYQ.m */,
+				51EAF06C1AFC7188E37137039D4D4E7F /* ZSChannelQQ.h */,
+				BD734AC79783C6800EC3FED1F6FCCC29 /* ZSChannelQQ.m */,
+				3E2812AECE6E4F061F7B6B02FD47AF10 /* ZSChannelQQZone.h */,
+				1C4C0A0D86DAC22234695B33C16D0703 /* ZSChannelQQZone.m */,
+				48D4583B6CEAC6AA3F16804ED1008F66 /* ZSChannelSinaWB.h */,
+				159BB15E2BD8BA2C1830F8EFF88BB461 /* ZSChannelSinaWB.m */,
+				023ECD2792BC95C9E170E94510BD8488 /* ZSChannelWX.h */,
+				CB0EAF08EADF0C452714A6DB8B5DEBCA /* ZSChannelWX.m */,
+				6856129607465FF73592DE2B1560149E /* ZSDataInfo.h */,
+				B297392985881067771FCBCDF8E14C68 /* ZSDataInfo.m */,
+				FEA2EDBE8129856A1D4422376857F54F /* ZShareInfo.h */,
+				EF01DFB36B12DA984B0BB6332C517FEA /* ZShareInfo.m */,
+				C2BBA421383B1572AAB7374CE7747283 /* Support Files */,
+			);
+			name = ZSThirdKit;
+			path = ZSThirdKit;
+			sourceTree = "<group>";
+		};
+		2C43D29648BF942FE12C15DF7726790B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B25BEAE61CB87096572B21D6D6837FFB /* HTestVC.xcconfig */,
+				3FB4A6BFC0A2C891B4E92EC1DB4557E4 /* HTestVC-dummy.m */,
+				36FF533528D83502408B0B6499847127 /* HTestVC-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HTestVC";
+			sourceTree = "<group>";
+		};
+		345FA1F59B445A2C7123A36CCCE0F1EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF9B99AEEEF5AFF53A5738A8C701A796 /* WeiboSDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		40E27363E3424741ED92B6C2B5EDE119 /* WeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				47C8C0A9A4B97FE5665A21BB6B81F4C6 /* WBHttpRequest.h */,
+				94F44D31110FBC92ED7D01897102E01A /* WBHttpRequest+WeiboGame.h */,
+				265A60FA9C754CB64A2018A33D9B705D /* WBHttpRequest+WeiboShare.h */,
+				B8FA8CA86C35EE0D2344DD58E4DFE0AE /* WBHttpRequest+WeiboToken.h */,
+				F2D03FACDFA2D1929E574501FAA2DB6F /* WBHttpRequest+WeiboUser.h */,
+				AD00A83AA903A6673808A15F294AE945 /* WBSDKBasicButton.h */,
+				A813D82BCF372472159FD8248C756980 /* WBSDKCommentButton.h */,
+				794F2FFAF79D2FF38C4AB29799B975E0 /* WBSDKRelationshipButton.h */,
+				FBBB0E67F331F6BF973736711D2E6132 /* WeiboSDK.h */,
+				AF624E038E1216DBD9BAB190530EAB4A /* WeiboUser.h */,
+				03A99340CD070711C17E87A795FCC9CC /* Frameworks */,
+				345FA1F59B445A2C7123A36CCCE0F1EE /* Resources */,
+			);
+			name = WeiboSDK;
+			path = WeiboSDK;
+			sourceTree = "<group>";
+		};
+		54B8DDCBE07FD8205A37EBF49BBF1908 /* ZSQQSDK */ = {
+			isa = PBXGroup;
+			children = (
+				76DDED2B29BE37BEE6B034762E1E2390 /* Frameworks */,
+			);
+			name = ZSQQSDK;
+			path = ZSQQSDK;
 			sourceTree = "<group>";
 		};
 		5D9CE28B0585687D35D62C2233E9ECDE /* Targets Support Files */ = {
@@ -85,13 +253,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		76DDED2B29BE37BEE6B034762E1E2390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FFAE6FE49CDCB9D14B1D04DBA307DF3 /* TencentOpenAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				BC4ED709B334B69E211641443C26932A /* Pods */,
-				DFFCCC720B8E54B3570AAB2ACD594CF1 /* Products */,
+				F934BADBADEEC4E55CF3ABC352F37C29 /* Pods */,
+				1294AB7F723F941E80831BA466C82F7B /* Products */,
 				5D9CE28B0585687D35D62C2233E9ECDE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -111,32 +287,50 @@
 			path = "Target Support Files/Pods-MyTestDemo";
 			sourceTree = "<group>";
 		};
-		BC4ED709B334B69E211641443C26932A /* Pods */ = {
+		A8A1DEE6A8FDE78AA498EC3DDE0CC930 /* WechatOpenSDK */ = {
 			isa = PBXGroup;
 			children = (
-				36D005277985633FBCF9F6E4C2EDA382 /* HTestVC */,
+				4A5ECDC98E4529248D82ADB9AA3C43D5 /* WechatAuthSDK.h */,
+				225F30C17D8ABDE9A1B9A24AFAB4142E /* WXApi.h */,
+				9D47DC37BAA04D9F3BC6C5DF61E2B5A0 /* WXApiObject.h */,
+				161711B92873AB7B35A2AD19640B1B06 /* Frameworks */,
 			);
-			name = Pods;
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
-		DFFCCC720B8E54B3570AAB2ACD594CF1 /* Products */ = {
+		C2BBA421383B1572AAB7374CE7747283 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C1ACFB54CA6B887039C80EE35EF487C8 /* libHTestVC.a */,
-				7C24A25EB09CCAAB21B9D675F38934C0 /* libPods-MyTestDemo.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E37366B16818DB5D8491D56CC5925B50 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7FF25F26E89D044AA0675743B31276A5 /* HTestVC.xcconfig */,
-				ACE5D8B0A9BD4E161CE4208E89ADAD34 /* HTestVC-dummy.m */,
-				A0F3DBC4FA35085A182C9D91944702EB /* HTestVC-prefix.pch */,
+				B09136F21D14AE0C58768D9C85AE7143 /* ZSThirdKit.xcconfig */,
+				F1FB552257B736335ACE461DC333203C /* ZSThirdKit-dummy.m */,
+				6D3EF40C4D2EEFC446461238B760AD66 /* ZSThirdKit-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/HTestVC";
+			path = "../Target Support Files/ZSThirdKit";
+			sourceTree = "<group>";
+		};
+		D345BE8EFDBACCEC0B0152CDF5B40CEA /* HTestVC */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA8D8A9C4EB315F818EC77D611EE0B /* HTestVC.h */,
+				BADDAE0D8A96274E93F4B9EE89724EFF /* HTestVC.m */,
+				2C43D29648BF942FE12C15DF7726790B /* Support Files */,
+			);
+			name = HTestVC;
+			path = HTestVC;
+			sourceTree = "<group>";
+		};
+		F934BADBADEEC4E55CF3ABC352F37C29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D345BE8EFDBACCEC0B0152CDF5B40CEA /* HTestVC */,
+				A8A1DEE6A8FDE78AA498EC3DDE0CC930 /* WechatOpenSDK */,
+				40E27363E3424741ED92B6C2B5EDE119 /* WeiboSDK */,
+				54B8DDCBE07FD8205A37EBF49BBF1908 /* ZSQQSDK */,
+				2814DF71EFA0DB61627C9487BCFE1A85 /* ZSThirdKit */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,24 +344,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99E7B3DFBA81474CF5283B7DD0DA479A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F36A3AB0549E76DECD2D15A3F31DD8 /* ZSChannelBase.h in Headers */,
+				8E215699AD5A72748197E2412EA60D7A /* ZSChannelHeaderFile.h in Headers */,
+				2E445A6C98F4AB285FB5AFF1C44415B7 /* ZSChannelManager.h in Headers */,
+				CA370E8219AAFF536A5B59181A81BFFC /* ZSChannelProtocol.h in Headers */,
+				6E600C2D1AA5136B3597D621602BF70D /* ZSChannelPYQ.h in Headers */,
+				11E71886CA638E52DAC8F2A5AD77CFE2 /* ZSChannelQQ.h in Headers */,
+				E40DE4A7BC31ABC05DBE575B0C8BC383 /* ZSChannelQQZone.h in Headers */,
+				ECC1CD5CDED78DE5CD001FD8977245D1 /* ZSChannelSinaWB.h in Headers */,
+				79B18628DFC271528232A5B187C738FE /* ZSChannelWX.h in Headers */,
+				0C4FA7D53D3FD41EDD2EDEAE5315458A /* ZSDataInfo.h in Headers */,
+				58593066371C82E2BBE465D62D92BD78 /* ZShareInfo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8D67FA2F331144B14FC9C512D1FFD66A /* Pods-MyTestDemo */ = {
+		867C5D0B6650AE3D952579AADB0AD318 /* ZSThirdKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAA5F9D4B3322BC0BFC4CF074D701766 /* Build configuration list for PBXNativeTarget "Pods-MyTestDemo" */;
+			buildConfigurationList = A54CD81934DE54E70DEAC2DE9D77361E /* Build configuration list for PBXNativeTarget "ZSThirdKit" */;
 			buildPhases = (
-				FE596EF3919B3A7B25D1E39634AC1AC2 /* Sources */,
-				3879DB84F36A18F2C1DCB2683CC8F7C2 /* Frameworks */,
+				4133A3B746820806040A0633D212F6FE /* Sources */,
+				A32D2B093229F082E0E44FA5982D43C9 /* Frameworks */,
+				99E7B3DFBA81474CF5283B7DD0DA479A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7C1056EE8E3E939A27D7683C5AAD678 /* PBXTargetDependency */,
 			);
-			name = "Pods-MyTestDemo";
-			productName = "Pods-MyTestDemo";
-			productReference = 7C24A25EB09CCAAB21B9D675F38934C0 /* libPods-MyTestDemo.a */;
+			name = ZSThirdKit;
+			productName = ZSThirdKit;
+			productReference = 25668EC9ED8A07F61573ABE46EB4C351 /* libZSThirdKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B1457CF3F3929A435AC1373925649985 /* HTestVC */ = {
@@ -184,7 +396,25 @@
 			);
 			name = HTestVC;
 			productName = HTestVC;
-			productReference = C1ACFB54CA6B887039C80EE35EF487C8 /* libHTestVC.a */;
+			productReference = CAACD309AE15E871ED738666D5035225 /* libHTestVC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B440C3855967F97B6A2150226EAAC79F /* Pods-MyTestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85EEA30A7DD8B3FF3C18ECB0CF34298D /* Build configuration list for PBXNativeTarget "Pods-MyTestDemo" */;
+			buildPhases = (
+				F192A81C755F98656CDE78532D22F896 /* Sources */,
+				CAB7FF0C899009189EDBF116DA8FABF9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7759D8D829A4C57141B388FED85B5093 /* PBXTargetDependency */,
+				AF8056F003EDE7CC75964C24585FCD13 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyTestDemo";
+			productName = "Pods-MyTestDemo";
+			productReference = FAAC114386FF83AFB6FDACE72517742F /* libPods-MyTestDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -204,17 +434,35 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DFFCCC720B8E54B3570AAB2ACD594CF1 /* Products */;
+			productRefGroup = 1294AB7F723F941E80831BA466C82F7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B1457CF3F3929A435AC1373925649985 /* HTestVC */,
-				8D67FA2F331144B14FC9C512D1FFD66A /* Pods-MyTestDemo */,
+				B440C3855967F97B6A2150226EAAC79F /* Pods-MyTestDemo */,
+				867C5D0B6650AE3D952579AADB0AD318 /* ZSThirdKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4133A3B746820806040A0633D212F6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D427005ECA1A28EDEC52F7C5D46E7A4 /* ZSChannelBase.m in Sources */,
+				0531CBFFF7A5AF40E5DEE24F782792F3 /* ZSChannelManager.m in Sources */,
+				CCFDDAC0C1EF34167CE9E6690C92AC67 /* ZSChannelPYQ.m in Sources */,
+				BCF2B4714A3A445B8B0D8D24998962D9 /* ZSChannelQQ.m in Sources */,
+				8D69019C75158FC015D16AED3FFFB85F /* ZSChannelQQZone.m in Sources */,
+				348EB983CCDB63DADF3DB43F5B8C5E74 /* ZSChannelSinaWB.m in Sources */,
+				50A0784B6C2CB735EB1602E99404595B /* ZSChannelWX.m in Sources */,
+				0E67855148250A5BC469D1847E938175 /* ZSDataInfo.m in Sources */,
+				8E659578D92C204B9AB541BC6B94B873 /* ZShareInfo.m in Sources */,
+				5C359716B493C778DDBCE90D1DAFF8CA /* ZSThirdKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76359786E7717D02038211AE3CE4D9FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,29 +472,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE596EF3919B3A7B25D1E39634AC1AC2 /* Sources */ = {
+		F192A81C755F98656CDE78532D22F896 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				460E0258C86CF549A41D38EB3D4EBA05 /* Pods-MyTestDemo-dummy.m in Sources */,
+				5B028F8CFBF61AEA938A4B9BE8917848 /* Pods-MyTestDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F7C1056EE8E3E939A27D7683C5AAD678 /* PBXTargetDependency */ = {
+		7759D8D829A4C57141B388FED85B5093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HTestVC;
 			target = B1457CF3F3929A435AC1373925649985 /* HTestVC */;
-			targetProxy = 3099EF9B4AA093EC4696E3021ED5E427 /* PBXContainerItemProxy */;
+			targetProxy = 0A2EEAF442BE1D4B54D280D1FA64A7B6 /* PBXContainerItemProxy */;
+		};
+		AF8056F003EDE7CC75964C24585FCD13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZSThirdKit;
+			target = 867C5D0B6650AE3D952579AADB0AD318 /* ZSThirdKit */;
+			targetProxy = ECEB93F5D08A24C869B647301D949D73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6A52362CF117D5AF051FE6202DF4A4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09136F21D14AE0C58768D9C85AE7143 /* ZSThirdKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSThirdKit/ZSThirdKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZSThirdKit;
+				PRODUCT_NAME = ZSThirdKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AF2D983B7AE7E32208D5647379CDA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6548596890EEDA4C0706E6AF97D653 /* Pods-MyTestDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		7DE28C3026AF9011C987C08C4660D8C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FF25F26E89D044AA0675743B31276A5 /* HTestVC.xcconfig */;
+			baseConfigurationReference = B25BEAE61CB87096572B21D6D6837FFB /* HTestVC.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -263,6 +563,50 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BE7E67338F520DADDCE511637B97697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09136F21D14AE0C58768D9C85AE7143 /* ZSThirdKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSThirdKit/ZSThirdKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZSThirdKit;
+				PRODUCT_NAME = ZSThirdKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A48AC4D19A7ABDBCB60429C2C822FBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F62632CC6BFBEDE3E72AEA09EBC5A05 /* Pods-MyTestDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -322,28 +666,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		C56AA0EB79D267F480928BDD632C58AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF6548596890EEDA4C0706E6AF97D653 /* Pods-MyTestDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -412,7 +734,7 @@
 		};
 		F2100A0882FB0D24E583B97CBC80941E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FF25F26E89D044AA0675743B31276A5 /* HTestVC.xcconfig */;
+			baseConfigurationReference = B25BEAE61CB87096572B21D6D6837FFB /* HTestVC.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -433,27 +755,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		FC3903FB5258F99FF9FC93687959D0A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F62632CC6BFBEDE3E72AEA09EBC5A05 /* Pods-MyTestDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -476,11 +777,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAA5F9D4B3322BC0BFC4CF074D701766 /* Build configuration list for PBXNativeTarget "Pods-MyTestDemo" */ = {
+		85EEA30A7DD8B3FF3C18ECB0CF34298D /* Build configuration list for PBXNativeTarget "Pods-MyTestDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC3903FB5258F99FF9FC93687959D0A3 /* Debug */,
-				C56AA0EB79D267F480928BDD632C58AB /* Release */,
+				A48AC4D19A7ABDBCB60429C2C822FBCD /* Debug */,
+				6AF2D983B7AE7E32208D5647379CDA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54CD81934DE54E70DEAC2DE9D77361E /* Build configuration list for PBXNativeTarget "ZSThirdKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE7E67338F520DADDCE511637B97697 /* Debug */,
+				6A52362CF117D5AF051FE6202DF4A4DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

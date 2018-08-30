@@ -1,16 +1,33 @@
 PODS:
   - HTestVC (1.2.4)
+  - WechatOpenSDK (1.7.9)
+  - WeiboSDK (3.1.3)
+  - ZSQQSDK (0.0.1)
+  - ZSThirdKit (0.1.1):
+    - WechatOpenSDK (~> 1.7.9)
+    - WeiboSDK (~> 3.1.3)
+    - ZSQQSDK (~> 0.0.0)
 
 DEPENDENCIES:
   - HTestVC
+  - ZSThirdKit (= 0.1.1)
 
 SPEC REPOS:
+  https://github.com/caterpillarFly/ZSRepo:
+    - ZSQQSDK
+    - ZSThirdKit
   https://github.com/cocoapods/specs.git:
     - HTestVC
+    - WechatOpenSDK
+    - WeiboSDK
 
 SPEC CHECKSUMS:
   HTestVC: de5dda504435f0d6a448945f3e5ef3b944f0237c
+  WechatOpenSDK: 1fe7e3b07db860d6a936c3ff4a5aba6b890958d9
+  WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
+  ZSQQSDK: ea3f8bcfdf20f5344a65780f44d291b9b576fd3a
+  ZSThirdKit: dc4606ca593e1798c1c542d12c18535f96eefb8f
 
-PODFILE CHECKSUM: 50591339d4c8724fb37ad525a63ae0f494310a63
+PODFILE CHECKSUM: c250012efe819b8b1e1f62230bc9a7f2c11bb159
 
 COCOAPODS: 1.5.3

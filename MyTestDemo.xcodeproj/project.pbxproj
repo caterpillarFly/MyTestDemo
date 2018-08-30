@@ -23,6 +23,8 @@
 		BE30832B211A89870080DF01 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = BE308329211A89870080DF01 /* Test.m */; };
 		BE30832E211A899E0080DF01 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BE30832D211A899E0080DF01 /* Person.m */; };
 		BE308335211AD4960080DF01 /* AutoreleaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BE308334211AD4960080DF01 /* AutoreleaseVC.m */; };
+		BE428763212AB46900122853 /* file1.c in Sources */ = {isa = PBXBuildFile; fileRef = BE428762212AB46900122853 /* file1.c */; };
+		BE428766212AB47500122853 /* file2.c in Sources */ = {isa = PBXBuildFile; fileRef = BE428765212AB47500122853 /* file2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,10 @@
 		BE30832D211A899E0080DF01 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		BE308333211AD4960080DF01 /* AutoreleaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleaseVC.h; sourceTree = "<group>"; };
 		BE308334211AD4960080DF01 /* AutoreleaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoreleaseVC.m; sourceTree = "<group>"; };
+		BE428761212AB46900122853 /* file1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = file1.h; sourceTree = "<group>"; };
+		BE428762212AB46900122853 /* file1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = file1.c; sourceTree = "<group>"; };
+		BE428764212AB47500122853 /* file2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = file2.h; sourceTree = "<group>"; };
+		BE428765212AB47500122853 /* file2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = file2.c; sourceTree = "<group>"; };
 		E8FEB8BCB5299C1F4D24DE35 /* libPods-MyTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F462E68F1CD4B6E4ACFE3F96 /* Pods-MyTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTestDemo/Pods-MyTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,7 @@
 		BE22084A2119711500DEB448 /* MyTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BE428760212AB44B00122853 /* Static */,
 				BE264F27211C35AE0073B7F6 /* GCD */,
 				BE308332211AD4960080DF01 /* Autorelease */,
 				BE308301211974030080DF01 /* InstanceType */,
@@ -184,6 +191,17 @@
 			path = Autorelease;
 			sourceTree = "<group>";
 		};
+		BE428760212AB44B00122853 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				BE428761212AB46900122853 /* file1.h */,
+				BE428762212AB46900122853 /* file1.c */,
+				BE428764212AB47500122853 /* file2.h */,
+				BE428765212AB47500122853 /* file2.c */,
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +213,7 @@
 				BE2208442119711500DEB448 /* Sources */,
 				BE2208452119711500DEB448 /* Frameworks */,
 				BE2208462119711500DEB448 /* Resources */,
+				1F93FA45F9091FA8FA0C8D9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +288,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1F93FA45F9091FA8FA0C8D9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyTestDemo/Pods-MyTestDemo-resources.sh",
+				"${PODS_ROOT}/WeiboSDK/libWeiboSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTestDemo/Pods-MyTestDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -283,10 +320,12 @@
 				BE30832B211A89870080DF01 /* Test.m in Sources */,
 				BE308335211AD4960080DF01 /* AutoreleaseVC.m in Sources */,
 				BE264F2A211C35F30073B7F6 /* GCDDemoVC.m in Sources */,
+				BE428763212AB46900122853 /* file1.c in Sources */,
 				BE308327211A816C0080DF01 /* RunLoopChangeModeVC.m in Sources */,
 				BE3083112119789A0080DF01 /* MyThread.m in Sources */,
 				BE22084D2119711500DEB448 /* AppDelegate.m in Sources */,
 				BE30830B2119760E0080DF01 /* InstanceTypeVC.m in Sources */,
+				BE428766212AB47500122853 /* file2.c in Sources */,
 				BE30830E211976250080DF01 /* VarableStructVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
