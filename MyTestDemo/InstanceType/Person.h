@@ -16,6 +16,12 @@
 
 +(instancetype)factoryMethodB;
 
++ (instancetype)newObj;
+
++ (id)newPerson;
+
 + (NSString *)firstName;
+
+- (NSString *)testName;
 
 @end

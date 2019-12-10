@@ -79,7 +79,7 @@
     
     NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
     [runLoop addPort:[NSMachPort port] forMode:NSRunLoopCommonModes];
-    NSTimer *timer = [NSTimer timerWithTimeInterval:1
+    NSTimer *timer = [NSTimer timerWithTimeInterval:2
                                              target:self
                                            selector:@selector(timerWantTodo)
                                            userInfo:nil
@@ -87,6 +87,7 @@
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     //[runLoop run];
     [runLoop runUntilDate:[NSDate dateWithTimeIntervalSinceNow:10]];
+    NSLog(@"behind runloop........");
 }
 
 - (void)timerWantTodo

@@ -16,6 +16,8 @@
 @property (nonatomic) ZSOpCancelBlock cancelBlock;
 //操作失败回调
 @property (nonatomic) ZSOpFailBlock failBlock;
+//分享渠道要求我们App响应的block
+@property (nonatomic) ZSOpSuccessBlock requestBlock;
 //渠道类型
 @property (nonatomic) ZSChannelType channelType;
 
@@ -103,6 +105,11 @@
     }
 }
 
+- (void)setRequestBlock:(ZSOpSuccessBlock)requestBlock
+{
+    _requestBlock = [requestBlock copy];
+}
+
 - (void)login
 {
     //子类实现
@@ -163,6 +170,15 @@
     }
 }
 
+- (void)didRequest:(id)data
+{
+    __unused ZSChannelBase *holder = self;
+    [self clear];
+    if (self.requestBlock) {
+        self.requestBlock(self, data);
+    }
+}
+
 - (void)didNotSupport
 {
     __unused ZSChannelBase *holder = self;
@@ -177,7 +193,7 @@
     [[ZSChannelManager sharedManager] clear];
 }
 
-- (BOOL)handleOpenURL:(NSURL *)url
+- (BOOL)handleOpenURL:(NSURL *)url userActivity:(NSUserActivity *)userActivity
 {
     return NO;
 }

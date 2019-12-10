@@ -13,8 +13,9 @@
 @interface ZSChannelWX () <WXApiDelegate, ZSOpProcessProtocol>
 
 @property (nonatomic) BOOL hasRegistered;
-@property (nonatomic) NSString *appKey;
-@property (nonatomic) NSString *appSecret;
+@property (nonatomic, copy) NSString *appKey;
+@property (nonatomic, copy) NSString *appSecret;
+@property (nonatomic, copy) NSString *universalLink;
 
 @end
 
@@ -33,8 +34,12 @@
     return WXSceneSession;
 }
 
-- (BOOL)handleOpenURL:(NSURL *)url
+- (BOOL)handleOpenURL:(NSURL *)url userActivity:(NSUserActivity *)userActivity
 {
+    [self registerApp];
+    if (userActivity) {
+        return [WXApi handleOpenUniversalLink:userActivity delegate:self];
+    }
     return [WXApi handleOpenURL:url delegate:self];
 }
 
@@ -55,8 +60,8 @@
     if (!self.hasRegistered) {
         @synchronized (self) {
             if (!self.hasRegistered) {
-                [WXApi registerApp:self.appKey];
-                self.hasRegistered = YES;
+                BOOL result = [WXApi registerApp:self.appKey universalLink:self.universalLink];
+                self.hasRegistered = result;
             }
         }
     }
@@ -67,6 +72,7 @@
     [super setupWithInfo:info];
     self.appKey = info[@"appKey"];
     self.appSecret = info[@"appSecret"];
+    self.universalLink = info[@"universalLink"];
 }
 
 - (ZSChannelType)channelType
@@ -82,28 +88,35 @@
     authReq.scope = @"snsapi_userinfo";
     authReq.state = @"com.migu.mobilemusic";
     
-    BOOL res = [WXApi sendReq:authReq];
-    if (!res) {
-        NSError *error = ZSChannelError(ZSChannelErrorCodeUnknown, @"登录失败");
-        [self didFail:error];
-    }
+    @weakify(self)
+    [WXApi sendReq:authReq completion:^(BOOL success) {
+        @strongify(self)
+        if (!success) {
+            NSError *error = ZSChannelError(ZSChannelErrorCodeUnknown, @"登录失败");
+            [self didFail:error];
+        }
+    }];
 }
 
 - (void)shareInfo:(ZShareInfo *)info
 {
     [self registerApp];
     
+    @weakify(self)
     [self reqWithInfo:info finish:^(SendMessageToWXReq *req) {
+        @strongify(self)
         if (!req) {
             NSError *error = ZSChannelError(ZSChannelErrorCodeUnsupport, @"不支持分享该类型数据");
             [self didFail:error];
         }
         else{
-            BOOL sendRes = [WXApi sendReq:req];
-            if (!sendRes) {
-                NSError *error = ZSChannelError(ZSChannelErrorCodeUnknown, @"分享请求失败");
-                [self didFail:error];
-            }
+            [WXApi sendReq:req completion:^(BOOL success) {
+                @strongify(self)
+                if (!success) {
+                    NSError *error = ZSChannelError(ZSChannelErrorCodeUnknown, @"分享请求失败");
+                    [self didFail:error];
+                }
+            }];
         }
     }];
     
@@ -113,6 +126,11 @@
 - (void)onReq:(BaseReq *)req
 {
     //收到一个来自微信的请求
+    if ([req isKindOfClass:[LaunchFromWXReq class]]) {
+        LaunchFromWXReq *launchReq = (LaunchFromWXReq *)req;
+        WXMediaMessage *msg = launchReq.message;
+        [self didRequest:msg];
+    }
 }
 
 - (void)onResp:(BaseResp *)resp
@@ -147,7 +165,8 @@
             [self didCancel];
             break;
         default:{
-            NSError *error = ZSChannelError(resp.errCode, resp.errStr);
+            NSString *errorInfo = resp.errStr ?: @"操作失败";
+            NSError *error = ZSChannelError(resp.errCode, errorInfo);
             [self didFail:error];
             break;
         }
@@ -203,6 +222,17 @@
         obj.videoLowBandUrl = videoInfo.videoLowBandUrl;
         mediaMessage.mediaObject = obj;
         req.message = mediaMessage;
+    } else if ([info isKindOfClass:[ZShareMiniProgram class]]){
+        ZShareMiniProgram *miniProgram = (ZShareMiniProgram *)info;
+        WXMediaMessage *mediaMessage = [self messageWithInfo:miniProgram];
+        WXMiniProgramObject *ext = [WXMiniProgramObject object];
+        ext.webpageUrl = miniProgram.shareUrl;
+        ext.hdImageData = miniProgram.originalImageData;
+        ext.path = miniProgram.path;
+        ext.userName = miniProgram.userName;
+        mediaMessage.mediaObject = ext;
+        req.message = mediaMessage;
+        
     }
     else{
         req = nil;

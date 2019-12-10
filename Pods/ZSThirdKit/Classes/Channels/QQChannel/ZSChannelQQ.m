@@ -17,6 +17,7 @@
 
 @property (nonatomic, copy) NSString *appKey;
 @property (nonatomic) TencentOAuth *auth;
+@property (nonatomic, copy) NSString *universalLink;
 
 @end
 
@@ -30,19 +31,31 @@
     return self;
 }
 
-- (BOOL)handleOpenURL:(NSURL *)url
+- (BOOL)handleOpenURL:(NSURL *)url userActivity:(NSUserActivity *)userActivity
 {
-    if ([TencentOAuth HandleOpenURL:url])
-        return YES;
-    else
-        return [QQApiInterface handleOpenURL:url delegate:self];
+    if (userActivity) {
+        if ([TencentOAuth HandleUniversalLink:url]) {
+            return YES;
+        }
+        else{
+            return [QQApiInterface handleOpenUniversallink:url delegate:self];
+        }
+    }
+    else{
+        if ([TencentOAuth HandleOpenURL:url]){
+            return YES;
+        }
+        else{
+            return [QQApiInterface handleOpenURL:url delegate:self];
+        }
+    }
 }
 
 - (void)setupWithInfo:(NSDictionary *)info
 {
     [super setupWithInfo:info];
-    NSString *appKey = info[@"appKey"];
-    self.appKey = appKey;
+    self.appKey = info[@"appKey"];
+    self.universalLink = info[@"universalLink"];
 }
 
 - (ZSChannelType)channelType
@@ -56,7 +69,6 @@
     //QQ空间SSO登录
     NSArray *permissionArr = @[kOPEN_PERMISSION_GET_USER_INFO,
                                kOPEN_PERMISSION_GET_SIMPLE_USER_INFO,
-                               kOPEN_PERMISSION_ADD_SHARE,
                                kOPEN_PERMISSION_ADD_TOPIC,
                                kOPEN_PERMISSION_GET_INFO,
                                kOPEN_PERMISSION_GET_OTHER_INFO,
@@ -232,7 +244,12 @@
     if (!_auth) {
         @synchronized (self) {
             if (!_auth) {
-                _auth = [[TencentOAuth alloc] initWithAppId:self.appKey andDelegate:self];
+                if (self.universalLink.length) {
+                    _auth = [[TencentOAuth alloc] initWithAppId:self.appKey andUniversalLink:self.universalLink andDelegate:self];
+                }
+                else{
+                    _auth = [[TencentOAuth alloc] initWithAppId:self.appKey andDelegate:self];
+                }
             }
         }
     }

@@ -16,6 +16,7 @@
 @property (nonatomic, weak) NSThread *subThread;//子线程
 @property (nonatomic, weak) NSRunLoopMode runLoopMode;   //想设置的RunLoop的Mode
 @property (nonatomic) BOOL isNeedRunLoopStop;    //控制是否需要停止RunLoop
+@property (nonatomic) NSInteger count;
 
 @end
 
@@ -26,6 +27,7 @@
     [super viewDidLoad];
     
     self.textView.delegate = self;
+    self.count = 1;
     
     NSLog(@"%@----开辟子线程",[NSThread currentThread]);
     
@@ -69,7 +71,9 @@
     
     while (!self.isNeedRunLoopStop) {//用while来控制RunLoop的运行与否
         //让RunLoop在我们希望的Mode下运行
+        NSLog(@"runloop: %ld",self.count);
         [runLoop runMode:self.runLoopMode beforeDate:[NSDate distantFuture]];
+        ++self.count;
     }
 }
 

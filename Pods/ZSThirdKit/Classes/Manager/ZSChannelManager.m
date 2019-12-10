@@ -26,8 +26,25 @@
 }
 
 - (BOOL)handleOpenURL:(NSURL *)url
+    sourceApplication:(NSString *)sourceApplication
+         userActivity:(NSUserActivity *)userActivity
+         requestBlock:(ZSOpSuccessBlock)requestBlock
 {
-    return [self.currentChannel handleOpenURL:url];
+    if ([sourceApplication isEqualToString:@"com.tencent.xin"] ||
+        [url.absoluteString containsString:@"platformId=wechat"]) {
+        //来自微信的分享，需要特殊处理小程序的问题
+        if (!self.currentChannel) {
+            ZSChannelBase *channel = [self channelWithType:ZSChannelTypeWX];
+            self.currentChannel = channel;
+        }
+        [self.currentChannel setRequestBlock:^(ZSChannelBase *channel, id data) {
+            if (requestBlock && ([data isKindOfClass:[WXMediaMessage class]])) {
+                WXMediaMessage *msg = (WXMediaMessage *)data;
+                requestBlock(channel, msg.messageExt);
+            }
+        }];
+    }
+    return [self.currentChannel handleOpenURL:url userActivity:userActivity];
 }
 
 - (ZSChannelBase *)channelWithType:(ZSChannelType)channelType notInstallBlock:(ZSNotSupportBlock)block

@@ -1,0 +1,1 @@
+../../../Hodor/Classes/Features/ClassManager/HClassManager.h

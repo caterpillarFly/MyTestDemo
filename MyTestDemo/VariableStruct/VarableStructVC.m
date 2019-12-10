@@ -14,6 +14,11 @@ typedef struct MyData
     char data[0];
 }MyData;
 
+typedef struct Field {
+    int a:5;
+    int b:3;
+}Field;
+
 @interface VarableStructVC ()
 
 @property (nonatomic) UILabel *contentLabel;
@@ -32,6 +37,13 @@ typedef struct MyData
     self.structData = @"typedef struct MyData\n{\n       int nLen;\n      char data[0];\n}MyData\n\n";
     self.content = varableTest();
     self.contentLabel.text = self.structData;
+    
+    char str[100] = "0134324324afsadfsdlfjlsdjfl";
+    Field d;
+    memcpy(&d, str, sizeof(Field));
+    
+    NSLog(@"size if %ld", sizeof(Field));
+    NSLog(@"Field.a:%ld, Field.b:%d", d.a, d.b);
 }
 
 - (void)didReceiveMemoryWarning {

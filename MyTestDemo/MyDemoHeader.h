@@ -17,4 +17,10 @@
 #define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
 #endif
 
+//#ifdef DEBUG
+//#define NSLog(FORMAT, ...) fprintf(stderr,"%s\n",[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//#else
+//#define NSLog(...)
+//#endif
+
 #endif /* MyDemoHeader_h */

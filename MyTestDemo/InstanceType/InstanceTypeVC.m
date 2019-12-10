@@ -26,20 +26,46 @@
      并且编译器无法确定返回的id对象是否是支持这个方法的类型
      */
     id objA = [Person factoryMethodA];
-    [objA testContents];
+    //[objA testContents];
+    [objA testName];
+    
+    [[Test factoryMethodA] testContents];
+    
+    //id objB = [Person newPerson];
+    //[objB subviews];
+    
+    //内存泄露测试
+    id testObj = [Person performSelector:@selector(newObj) withObject:nil];
+    NSLog(@"testObj:%@",testObj);
+    testObj = nil;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"2");
+        [self performSelectorOnMainThread:@selector(mainThreadMethod) withObject:nil waitUntilDone:YES];
+        NSLog(@"3");
+    });
     
     //Person *objB = [Person factoryMethodB];
     //[objB testContents];
+    
+    //Test *obj = [Person newPerson];
+    //NSLog(@"obj:%@", obj);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (__kindof NSArray *)tmpArray
 {
     return [NSArray array];
+}
+
+- (void)mainThreadMethod
+{
+    NSLog(@"0");
+    sleep(5);
+    NSLog(@"1");
 }
 
 @end

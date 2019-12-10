@@ -21,6 +21,18 @@
 
 @implementation RunLoopViewController
 
+__attribute__((constructor))
+static void breforeMain()
+{
+    NSLog(@"before main");
+}
+
+__attribute__((destructor))
+static void afterMain()
+{
+    NSLog(@"after main");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

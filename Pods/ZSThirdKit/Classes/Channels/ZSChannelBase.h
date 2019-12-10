@@ -77,9 +77,14 @@
 
 
 
+//设置分享渠道请求自己App的回调
+- (void)setRequestBlock:(ZSOpSuccessBlock)requestBlock;
+
+
+
 
 //接住外部OpenUrl回调
-- (BOOL)handleOpenURL:(NSURL *)url;
+- (BOOL)handleOpenURL:(NSURL *)url userActivity:(NSUserActivity *)userActivity;
 
 
 

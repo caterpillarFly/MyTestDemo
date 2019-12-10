@@ -13,6 +13,7 @@
 
 +(id)factoryMethodA
 {
+    //return [[Test alloc] init];
     return [[self alloc] init];
 }
 
@@ -21,10 +22,31 @@
     return [[self alloc] init];
 }
 
++ (instancetype)newObj
+{
+    return [[self alloc] init];
+}
+
++ (id)newPerson
+{
+    //return [[Test alloc] init];
+    return [[self alloc] init];
+}
+
 + (NSString *)firstName
 {
     NSString *name = [[self factoryMethodB] name];
     return name;
+}
+
+- (NSString *)testName
+{
+    return @"张三";
+}
+
+- (void)dealloc
+{
+    NSLog(@"=============dealloc:%@================", self);
 }
 
 @end

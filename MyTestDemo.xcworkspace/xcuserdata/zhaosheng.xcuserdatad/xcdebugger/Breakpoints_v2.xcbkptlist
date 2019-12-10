@@ -1,21 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "923D894A-FEF7-414C-B75F-7722138EEF8D"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "54EF4580-B394-4FE0-8ED4-702F4F962267"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyTestDemo/RunLoop/RunLoopChangeModeVC.m"
-            timestampString = "555389992.822703"
+            filePath = "MyTestDemo/GifVC.m"
+            timestampString = "558674228.823878"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "-subThreadTodo"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F356161-A767-4B53-ADA4-618619EAC428"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTestDemo/&#x4e8b;&#x4ef6;&#x54cd;&#x5e94;&#x94fe;/ZSNextResponsderVC.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-touchesBegan:withEvent:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "840B9A52-CD70-4866-9BE2-348B7186FF34"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTestDemo/&#x4e8b;&#x4ef6;&#x54cd;&#x5e94;&#x94fe;/ZSNextResponsderVC.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-newButtonClicked:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
