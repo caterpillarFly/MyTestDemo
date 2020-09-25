@@ -3,7 +3,7 @@
 //  MGMobileMusic
 //
 //  Created by zhaosheng on 2018/10/10.
-//  Copyright © 2018年 migu. All rights reserved.
+//  Copyright © 2018年 xxxx. All rights reserved.
 //
 
 #import "MGSafeHostURLManager.h"
@@ -51,37 +51,37 @@ static NSString *const MG_DES_KEY = @"jbXGHTytBAxFqleSbJ";
         self.urlsDic = [@{@"kContentServerHost_D" : @"http://218.200.227.207:18089/",
                           @"kH5ServerHost_D" : @"http://218.200.227.207:8080/",
                           
-                          @"kContentServerHost_S" : @"http://app.c.nf.migu.cn/",
-                          @"kProductServerHost_S" : @"http://app.pd.nf.migu.cn/",
-                          @"kUserServerHost_S" : @"http://app.u.nf.migu.cn/",
-                          @"kBarrageServerHost_S" : @"http://app.b.nf.migu.cn/",
-                          @"kResourceServerHost_S" : @"http://app.d.nf.migu.cn/",
+                          @"kContentServerHost_S" : @"http://app.c.nf.xxxx.cn/",
+                          @"kProductServerHost_S" : @"http://app.pd.nf.xxxx.cn/",
+                          @"kUserServerHost_S" : @"http://app.u.nf.xxxx.cn/",
+                          @"kBarrageServerHost_S" : @"http://app.b.nf.xxxx.cn/",
+                          @"kResourceServerHost_S" : @"http://app.d.nf.xxxx.cn/",
                           @"kH5ServerHost_S" : @"http://218.200.227.207:8080/",
                           
                           @"kContentServerHost_F" : @"http://218.200.229.178/",
                           @"kH5ServerHost_F" : @"http://218.200.227.207:8080/",
                           
-                          @"kContentServerHost_R": @"http://app.c.nf.migu.cn/",
-                          @"kProductServerHost_R": @"https://app.pd.nf.migu.cn/",
-                          @"kUserServerHost_R" : @"http://app.u.nf.migu.cn/",
-                          @"kBarrageServerHost_R" : @"http://app.b.nf.migu.cn/",
-                          @"kResourceServerHost_R" : @"http://app.d.nf.migu.cn/",
+                          @"kContentServerHost_R": @"http://app.c.nf.xxxx.cn/",
+                          @"kProductServerHost_R": @"https://app.pd.nf.xxxx.cn/",
+                          @"kUserServerHost_R" : @"http://app.u.nf.xxxx.cn/",
+                          @"kBarrageServerHost_R" : @"http://app.b.nf.xxxx.cn/",
+                          @"kResourceServerHost_R" : @"http://app.d.nf.xxxx.cn/",
                           @"kH5ServerHost_R" : @"http://218.200.227.207:8080/",
                           
-                          @"kH5NfMiguCN" : @"http://h5.nf.migu.cn/",
-                          @"kAMllMiguCN" : @"http://a.mll.migu.cn/",
+                          @"kH5NfxxxxCN" : @"http://h5.nf.xxxx.cn/",
+                          @"kAMllxxxxCN" : @"http://a.mll.xxxx.cn/",
                           @"MGHTML5DebugNet": @"http://218.205.244.254",
                           @"MGGetWeiCodeDao": @"http://www.cmpassport.com/",
                           @"SINAWEIBO_REDIRECT_URI": @"http://music.10086.cn",
                           @"SINAWEIBO_REVOKEOAUTH_URL": @"https://api.weibo.com/2/",
                           @"kM10086CN": @"http://m.10086.cn/",
-                          @"kDmusicappMiguCNs": @"https://d.musicapp.migu.cn/",
-                          @"kDmusicappMiguCN" : @"http://d.musicapp.migu.cn/",
-                          @"kKfMiguCN" : @"http://kf.migu.cn/",
-                          @"kPdMusicappMiguCN" : @"http://pd.musicapp.migu.cn/",
-                          @"kMigumusicMikecrmCom": @"http://migumusic.mikecrm.com/",
+                          @"kDmusicappxxxxCNs": @"https://d.musicapp.xxxx.cn/",
+                          @"kDmusicappxxxxCN" : @"http://d.musicapp.xxxx.cn/",
+                          @"kKfxxxxCN" : @"http://kf.xxxx.cn/",
+                          @"kPdMusicappxxxxCN" : @"http://pd.musicapp.xxxx.cn/",
+                          @"kxxxxmusicMikecrmCom": @"http://xxxxmusic.mikecrm.com/",
                           @"MGHeaderImageGif": @"http://tvax2.sinaimg.cn/default/images/default_avatar_male_180.gif",
-                          @"kZaZhiMiguCN": @"http://zazhi.migu.cn"
+                          @"kZaZhixxxxCN": @"http://zazhi.xxxx.cn"
                           } mutableCopy];
         //self.encryptDic = [NSMutableDictionary dictionary];
         
@@ -100,20 +100,20 @@ static NSString *const MG_DES_KEY = @"jbXGHTytBAxFqleSbJ";
                           @"kUserServerHost_R",
                           @"kBarrageServerHost_R",
                           @"kResourceServerHost_R",
-                          @"kH5NfMiguCN",
-                          @"kAMllMiguCN",
+                          @"kH5NfxxxxCN",
+                          @"kAMllxxxxCN",
                           @"MGHTML5DebugNet",
                           @"MGGetWeiCodeDao",
                           @"SINAWEIBO_REDIRECT_URI",
                           @"SINAWEIBO_REVOKEOAUTH_URL",
                           @"kM10086CN",
-                          @"kDmusicappMiguCNs",
-                          @"kDmusicappMiguCN",
-                          @"kKfMiguCN",
-                          @"kPdMusicappMiguCN",
-                          @"kMigumusicMikecrmCom",
+                          @"kDmusicappxxxxCNs",
+                          @"kDmusicappxxxxCN",
+                          @"kKfxxxxCN",
+                          @"kPdMusicappxxxxCN",
+                          @"kxxxxmusicMikecrmCom",
                           @"MGHeaderImageGif",
-                          @"kZaZhiMiguCN"];
+                          @"kZaZhixxxxCN"];
         self.keys = keys;
     }
     return self;

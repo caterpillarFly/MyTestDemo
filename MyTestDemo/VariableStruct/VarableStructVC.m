@@ -14,10 +14,22 @@ typedef struct MyData
     char data[0];
 }MyData;
 
+struct MGPerson_IMPL{
+    Class isa;
+    int _age;
+    int _no;
+    int _height;
+};
+
 typedef struct Field {
     int a:5;
     int b:3;
 }Field;
+
+typedef struct v_struct {
+    int i;
+    int a[0];
+}v_struct;
 
 @interface VarableStructVC ()
 
@@ -89,9 +101,17 @@ NSString *varableTest()
     //int x3 = (unsigned int)(void*)&t.c - (unsigned int)(void*)&t;
     //int x4 = (unsigned int)(void*)&t.d - (unsigned int)(void*)&t;
     //int x5 = (unsigned int)(void*)&t.e - (unsigned int)(void*)&t;
-    printf("nlen=%p\ndata=%p", x1, x2);
+    printf("nlen=%p\ndata=%p\n", x1, x2);
     
+#warning
+    //TODO:sizeof(myData)，传递的是一个指针，那返回的，在64位机器上，肯定是8个字节
     NSString *content = [NSString stringWithFormat:@"Size of MyData: %lu,\n Size of myData: %lu,\n myData's Data is: %@,\n nlen=%p\ndata=%p", sizeof(MyData), sizeof(myData), @"123456789", x1, x2];
+    
+    v_struct *pv = (v_struct*)malloc(sizeof(v_struct)+sizeof(int)* 100);
+    //pv->a[50] = 100;
+    printf("sizeof v_struct: %u\n", sizeof(v_struct));
+    printf("sizeof v_struct instance：%u\n", sizeof(pv));
+    
     return content;
 }
 

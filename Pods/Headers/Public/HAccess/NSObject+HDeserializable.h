@@ -1,0 +1,1 @@
+../../../HAccess/Classes/Entity/NSObject+HDeserializable.h

@@ -48,7 +48,7 @@
     //Person *objB = [Person factoryMethodB];
     //[objB testContents];
     
-    //Test *obj = [Person newPerson];
+    //[[Person newPerson] subviews];
     //NSLog(@"obj:%@", obj);
 }
 

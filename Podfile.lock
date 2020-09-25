@@ -1,33 +1,33 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - HAccess (2.6.8):
-    - HAccess/Network (= 2.6.8)
-  - HAccess/Entity (2.6.8):
+  - HAccess (3.0.0):
+    - HAccess/Network (= 3.0.0)
+  - HAccess/Entity (3.0.0):
     - Hodor/Defines
     - Hodor/Feature
     - Hodor/NS-Category
-  - HAccess/Network (2.6.8):
+  - HAccess/Network (3.0.0):
     - AFNetworking
     - HAccess/Entity
     - HCache
     - Hodor/Defines
     - Hodor/Feature
     - Hodor/NS-Category
-  - HCache (1.3.1):
+  - HCache (1.3.2):
     - Hodor/Defines
     - Hodor/NS-Category
   - Hodor (2.1.3):
@@ -63,8 +63,8 @@ PODS:
     - ZSQQSDK
 
 DEPENDENCIES:
-  - AFNetworking (= 3.2.1)
-  - HAccess (= 2.6.8)
+  - AFNetworking (= 4.0.1)
+  - HAccess (= 3.0.0)
   - Hodor (= 2.1.3)
   - HTestVC
   - Qiniu (~> 7.1)
@@ -90,9 +90,9 @@ SPEC REPOS:
     - YYImage
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  HAccess: 6fb83c5839292cf8ee7f7a91b145d93ab64c83f9
-  HCache: cdc95416408ee4224162b417e9e2c9325040deac
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  HAccess: 9336e88b8adf0b46587f640d9974b9447421d324
+  HCache: 488dff1cade60521a3e08a50e53f303159e479c1
   Hodor: 6f1834aa7b6faa2c1cd9bdb9ae790a2c4336b00e
   HTestVC: de5dda504435f0d6a448945f3e5ef3b944f0237c
   Qiniu: a2fb1f87b40f52bc1f386d93c6d48aab09472eae
@@ -103,6 +103,6 @@ SPEC CHECKSUMS:
   ZSQQSDK: 90e214b1c565139add6c81bdbe9f536017522c39
   ZSThirdKit: a725a9089e712fb8d820f2e350e086f196986df3
 
-PODFILE CHECKSUM: 32101c85bb169c776f36d47b5fe830b7c18d72ee
+PODFILE CHECKSUM: 8e962d69772dd1a4d401d8e81de6b4253bb2cb90
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.0

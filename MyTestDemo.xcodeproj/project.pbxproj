@@ -598,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.migu.develop.mobilemusic;
+				PRODUCT_BUNDLE_IDENTIFIER = xxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "484d2dbd-4052-4947-acb4-209df5319f09";
 				PROVISIONING_PROFILE_SPECIFIER = mg_music_dev_debug;
@@ -622,7 +622,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.migu.develop.mobilemusic;
+				PRODUCT_BUNDLE_IDENTIFIER = xxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "484d2dbd-4052-4947-acb4-209df5319f09";
 				PROVISIONING_PROFILE_SPECIFIER = mg_music_dev_debug;

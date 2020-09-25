@@ -3,7 +3,7 @@
 //  MGMobileMusic
 //
 //  Created by zhaosheng on 2018/10/10.
-//  Copyright © 2018年 migu. All rights reserved.
+//  Copyright © 2018年 xxxx. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -9,8 +9,8 @@ target 'MyTestDemo' do
   pod 'YYImage'
   pod 'Hodor', '2.1.3'
   pod "Qiniu", "~> 7.1"
-  pod 'AFNetworking', '3.2.1'
-  pod 'HAccess', '2.6.8'
+  pod 'AFNetworking', '4.0.1'
+  pod 'HAccess', '3.0.0'
   pod 'ReactiveCocoa', '2.5'
   pod 'WechatOpenSDK', '1.8.6'
   
